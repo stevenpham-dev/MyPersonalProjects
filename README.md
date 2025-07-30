@@ -7,7 +7,7 @@ Transforms the sandbox into a competitive team‑vs‑team experience with facti
 
 ## Comprehensive Overview of Code Contributions
 
-The developer (DarkSlayer) contributed a wide range of features, fixes, and improvements to TFlippy’s Territory Control mod for King Arthur’s Gold. These contributions span from mid‑2020 through early 2022, starting when the author was a beginner at coding. Below is a detailed summary of the most noteworthy changes, organized by category for clarity.
+I the developer, under the username of DarkSlayer back then, contributed a wide range of features, fixes, and improvements to TFlippy’s Territory Control mod for King Arthur’s Gold. These contributions span from mid‑2020 through early 2022, starting when the author was a beginner at coding. Below is a detailed summary of the most noteworthy changes, organized by category for clarity.
 
 ---
 
@@ -102,6 +102,3 @@ The developer (DarkSlayer) contributed a wide range of features, fixes, and impr
 From small bug patches in mid‑2020 (e.g., “Update Villager.as”) to complex feature additions by late 2021 (multi‑file system overhauls), this body of work illustrates a clear learning curve—from early experimentation to robust, systems‑level design, optimization, and maintainability in AngelScript. Each contribution enhanced gameplay depth, performance, and stability, reflecting the developer’s evolution into a confident software engineer.
 
 ---
-
-*For usage details, installation instructions, and how to extend these systems (e.g., adding SmartStorage tags to any container), see the next sections below.*
-::contentReference[oaicite:0]{index=0}
