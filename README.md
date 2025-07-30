@@ -1,13 +1,13 @@
-# Territory Control – Capture the Faction
+Comprehensive Overview of Code Contributions in the Territory Control Mod
 
 **A two‑faction battle mod for King Arthur’s Gold**  
-Transforms the sandbox into a competitive team‑vs‑team experience with faction bases, upgradeable defenses, new gameplay systems, and deep balance tuning.
+Transforms the sandbox mod, Territory Control (made by TFlippy) into a competitive team‑vs‑team experience with faction bases, upgradeable defenses, new gameplay systems, and deep balance tuning, and I coined it TC CTF, or Territory Control - Conquer the Faction.
 
 ---
 
 ## Comprehensive Overview of Code Contributions
 
-I the developer, under the username of DarkSlayer back then, contributed a wide range of features, fixes, and improvements to TFlippy’s Territory Control mod for King Arthur’s Gold. These contributions span from mid‑2020 through early 2022, starting when the author was a beginner at coding. Below is a detailed summary of the most noteworthy changes, organized by category for clarity.
+The developer (DarkSlayer) contributed a wide range of features, fixes, and improvements to TFlippy’s Territory Control mod for King Arthur’s Gold. These contributions span from mid‑2020 through early 2022, starting when the author was a beginner at coding. Below is a detailed summary of the most noteworthy changes, organized by category for clarity.
 
 ---
 
