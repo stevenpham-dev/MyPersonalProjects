@@ -7,7 +7,7 @@ Transforms the sandbox mod, Territory Control (made by TFlippy) into a competiti
 
 ## Comprehensive Overview of Code Contributions
 
-The developer (DarkSlayer) contributed a wide range of features, fixes, and improvements to TFlippy’s Territory Control mod for King Arthur’s Gold. These contributions span from mid‑2020 through early 2022, starting when the author was a beginner at coding. Below is a detailed summary of the most noteworthy changes, organized by category for clarity.
+I, under the username of DarkSlayer at the time, contributed a wide range of features, fixes, and improvements to TFlippy’s Territory Control mod for King Arthur’s Gold. These contributions span from mid‑2020 through early 2022, starting when the author was a beginner at coding. Below is a detailed summary of the most noteworthy changes, organized by category for clarity.
 
 ---
 
