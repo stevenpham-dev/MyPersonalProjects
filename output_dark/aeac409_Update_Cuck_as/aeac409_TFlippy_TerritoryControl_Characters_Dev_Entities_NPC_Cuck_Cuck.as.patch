@@ -1,0 +1,21 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Cuck/Cuck.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Cuck/Cuck.as
+index 78ac2eb..bcc1d7d 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Cuck/Cuck.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Cuck/Cuck.as
+@@ -37,7 +37,8 @@
+ 	this.SetDamageOwnerPlayer(null);
+ 	
+ 	this.Tag("can open door");
+-	this.Tag("npc");
++	// this.Tag("npc");
++	// infinite ammo
+ 	this.Tag("player");
+ 	this.Tag("flesh");
+ 	this.Tag("dangerous");
+@@ -194,4 +195,4 @@
+ 			}
+ 		}
+ 	}
+-}
+\ No newline at end of file
++}

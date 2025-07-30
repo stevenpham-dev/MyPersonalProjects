@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/CoalMine/CoalMine.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/CoalMine/CoalMine.as
+index b1d6b46..be4c476 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/CoalMine/CoalMine.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/CoalMine/CoalMine.as
+@@ -124,7 +124,7 @@
+ 
+ CBlob@ FindStorage(u8 team)
+ {
+-	if (team > 100) return null;
++	if (team >= 100) return null;
+ 	
+ 	CBlob@[] blobs;
+ 	getBlobsByName("stonepile", @blobs);

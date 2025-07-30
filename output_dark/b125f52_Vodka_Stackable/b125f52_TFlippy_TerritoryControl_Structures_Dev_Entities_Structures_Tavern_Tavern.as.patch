@@ -1,0 +1,19 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Tavern/Tavern.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Tavern/Tavern.as
+index 54011f2..fac1bc7 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Tavern/Tavern.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Tavern/Tavern.as
+@@ -37,10 +37,14 @@
+ 	{
+ 		ShopItem@ s = addShopItem(this, "Beer's Bear", "$beer$", "beer", "Homemade fresh bear with foam!", false);
+ 		AddRequirement(s.requirements, "coin", "", "Coins", 29);
++	
++		s.spawnNothing = true;
+ 	}
+ 	{
+ 		ShopItem@ s = addShopItem(this, "Vodka!", "$icon_vodka$", "vodka", "Also homemade fun water, buy this!");
+ 		AddRequirement(s.requirements, "coin", "", "Coins", 91);
++
++		s.spawnNothing = true;
+ 	}
+ 	{
+ 		ShopItem@ s = addShopItem(this, "Tasty Rat Burger", "$ratburger$", "ratburger", "FLUFFY BURGER");

@@ -1,0 +1,33 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/FleshHit.as b/TFlippy_TerritoryControl_Core_Dev/Entities/FleshHit.as
+index 02ede6d..86bdaf5 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/FleshHit.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/FleshHit.as
+@@ -224,10 +224,14 @@
+ {
+ 	if (this.hasTag("do gib"))
+ 	{
++		print("gib");
++	
+ 		f32 count = 2 + XORRandom(4);
+-		int frac = Maths::Min(250, this.getMass()) / count * 0.50f;
++		int frac = Maths::Min(250, this.getMass() / count);
+ 		f32 radius = this.getRadius();
+ 		
++		f32 explodium_amount = this.get_f32("propeskoed") * 0.50f / count;
++		
+ 		for (int i = 0; i < count; i++)
+ 		{
+ 			if (isClient())
+@@ -243,7 +247,11 @@
+ 				CBlob@ blob = server_CreateBlob("mat_meat", this.getTeamNum(), this.getPosition());
+ 				if (blob !is null)
+ 				{
+-					blob.server_SetQuantity(frac * 0.25f + XORRandom(frac));
++					if (explodium_amount > 0.00f) blob.set_f32("explodium_amount", explodium_amount);
++
++					// print("" + explodium_amount);
++				
++					blob.server_SetQuantity(1 + (frac * 0.25f + XORRandom(frac)));
+ 					blob.setVelocity(vel);
+ 				}
+ 			}

@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/CargoContainer/CargoContainer.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/CargoContainer/CargoContainer.as
+index a7383c1..c44e6d5 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/CargoContainer/CargoContainer.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/CargoContainer/CargoContainer.as
+@@ -25,5 +25,5 @@
+ 
+ bool isInventoryAccessible(CBlob@ this, CBlob@ forBlob)
+ {
+-	return forBlob !is null && (this.getTeamNum() > 100 ? true : this.getTeamNum() == forBlob.getTeamNum());	
++	return forBlob !is null && (this.getTeamNum() >= 100 ? true : this.getTeamNum() == forBlob.getTeamNum());	
+ }
+\ No newline at end of file

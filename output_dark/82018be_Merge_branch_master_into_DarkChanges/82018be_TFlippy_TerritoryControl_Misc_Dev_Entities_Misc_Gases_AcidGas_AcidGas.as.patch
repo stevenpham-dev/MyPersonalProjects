@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Misc_Dev/Entities/Misc/Gases/AcidGas/AcidGas.as b/TFlippy_TerritoryControl_Misc_Dev/Entities/Misc/Gases/AcidGas/AcidGas.as
+index e1a1bc4..5f41c22 100644
+--- a/TFlippy_TerritoryControl_Misc_Dev/Entities/Misc/Gases/AcidGas/AcidGas.as
++++ b/TFlippy_TerritoryControl_Misc_Dev/Entities/Misc/Gases/AcidGas/AcidGas.as
+@@ -53,7 +53,7 @@
+ 			
+ 			if (!isTileGlass(type) && !isTileBGlass(type) && type != CMap::tile_empty && type != CMap::tile_ground_back)
+ 			{
+-				if (server)
++				if (server && type != CMap::tile_bedrock)
+ 				{
+ 					map.server_DestroyTile(bpos, 1, this);
+ 				}

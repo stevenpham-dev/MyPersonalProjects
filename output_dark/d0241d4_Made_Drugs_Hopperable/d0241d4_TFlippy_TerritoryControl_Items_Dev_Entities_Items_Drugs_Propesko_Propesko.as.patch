@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Propesko/Propesko.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Propesko/Propesko.as
+index 50226f1..a15d01c 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Propesko/Propesko.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Propesko/Propesko.as
+@@ -2,6 +2,7 @@
+ {
+ 	this.getShape().SetRotationsAllowed(true);
+ 	this.addCommandID("consume");
++	this.Tag("hopperable");
+ }
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)

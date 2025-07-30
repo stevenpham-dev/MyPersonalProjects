@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+index 4276ef7..b4aa69a 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+@@ -243,7 +243,7 @@
+ 	u8 victimTeam = victim.getTeamNum();
+ 	s32 respawn_time = 30 * 4;
+ 
+-	if (victimTeam > 100) respawn_time += 30 * 4;
++	if (victimTeam >= 100) respawn_time += 30 * 4;
+ 	if (victimTeam < 7)
+ 	{
+ 		TeamData@ team_data;

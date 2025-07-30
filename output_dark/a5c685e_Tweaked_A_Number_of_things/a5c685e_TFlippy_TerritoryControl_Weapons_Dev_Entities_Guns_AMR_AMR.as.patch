@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Weapons_Dev/Entities/Guns/AMR/AMR.as b/TFlippy_TerritoryControl_Weapons_Dev/Entities/Guns/AMR/AMR.as
+index dcc7d35..9656a07 100644
+--- a/TFlippy_TerritoryControl_Weapons_Dev/Entities/Guns/AMR/AMR.as
++++ b/TFlippy_TerritoryControl_Weapons_Dev/Entities/Guns/AMR/AMR.as
+@@ -10,7 +10,7 @@
+ 		this,
+ 		true,				//If true, gun will be fully automatic and players will be able to just hold the fire button
+ 		4.00f,				//Weapon damage / projectile blob name
+-		800.0f,				//Weapon raycast range
++		1000.0f,				//Weapon raycast range
+ 		5,					//Weapon fire delay, in ticks
+ 		1,					//Weapon clip size
+ 		1.00f,				//Ammo usage factor, completely ignore for now

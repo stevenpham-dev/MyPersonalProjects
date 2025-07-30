@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Storage/Storage.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Storage/Storage.as
+index 4c5ef5e..7696b88 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Storage/Storage.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Storage/Storage.as
+@@ -113,7 +113,7 @@
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)
+ {
+-	if ((this.getTeamNum() > 100 ? true : caller.getTeamNum() == this.getTeamNum()) && caller.isOverlapping(this))
++	if ((this.getTeamNum() >= 100 ? true : caller.getTeamNum() == this.getTeamNum()) && caller.isOverlapping(this))
+ 	{
+ 		CInventory @inv = caller.getInventory();
+ 		if(inv is null) return;

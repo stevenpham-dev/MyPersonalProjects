@@ -1,0 +1,15 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/CombatChickens/Scout/ScoutChicken.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/CombatChickens/Scout/ScoutChicken.as
+index 66b13ef..c759490 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/CombatChickens/Scout/ScoutChicken.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/CombatChickens/Scout/ScoutChicken.as
+@@ -188,9 +188,8 @@
+ 		moveVars.jumpFactor *= 1.80f;
+ 	}
+ 
+-	if (this.getHealth() < 0.0 && !this.hasTag("dead"))
++	if (this.getHealth() < 0.0 && this.hasTag("dead"))
+ 	{
+-		this.Tag("dead");
+ 		this.getSprite().PlaySound("Wilhelm.ogg", 1.8f, 1.8f);
+ 		
+ 		if (isServer())

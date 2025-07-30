@@ -1,0 +1,16 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Scripts/StandardRespawnCommand.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Scripts/StandardRespawnCommand.as
+index 8ebde49..cd2114e 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Scripts/StandardRespawnCommand.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Scripts/StandardRespawnCommand.as
+@@ -135,6 +135,11 @@
+ 							newBlob.server_SetHealth(Maths::Ceil(newBlob.getInitialHealth() * 1.50f));
+ 							// print("after " + new_blob.getHealth());
+ 						}
++						else if (this.getName() == "convent")
++						{
++							newBlob.server_SetHealth(Maths::Ceil(newBlob.getInitialHealth() * 2.0f));
++							// print("after " + new_blob.getHealth());
++						}
+ 						else
+ 						{
+ 							newBlob.server_SetHealth(newBlob.getInitialHealth() * healthratio);

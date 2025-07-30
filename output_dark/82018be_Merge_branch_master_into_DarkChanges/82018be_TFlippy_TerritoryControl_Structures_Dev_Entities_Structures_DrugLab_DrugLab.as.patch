@@ -1,0 +1,26 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as
+index 308d7ea..c99fe4b 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as
+@@ -132,6 +132,21 @@
+ 			bool hasVodka = vodka_blob !is null;
+ 			bool hasFiks = fiks_blob !is null;
+ 			
++			if (meat_count > 0 && meat_blob !is null)
++			{
++				f32 explodium_amount = meat_blob.get_f32("explodium_amount");
++				
++				if (isServer())
++				{
++					Material::createFor(this, "mat_explodium", Maths::Ceil(explodium_amount));
++				}
++				
++				meat_blob.set_f32("explodium_amount", 0.00f);
++				
++				ShakeScreen(60.0f, 30, this.getPosition());
++				this.getSprite().PlaySound("DrugLab_Create_Gas.ogg", 1.00f, 1.00f);
++			}
++			
+ 			if (heat > 500 && hasFiks)
+ 			{
+ 				if (isServer())

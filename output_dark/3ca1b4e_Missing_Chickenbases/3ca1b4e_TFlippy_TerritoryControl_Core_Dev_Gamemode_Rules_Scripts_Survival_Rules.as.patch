@@ -1,0 +1,14 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+index b4aa69a..a519cd6 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+@@ -560,7 +560,9 @@
+ 	CBlob@[] ruins;
+ 	getBlobsByName("chickencamp", @ruins);
+ 	getBlobsByName("chickenfortress", @ruins);
++	getBlobsByName("chickenstronghold", @ruins);
+ 	getBlobsByName("chickencitadel", @ruins);
++	getBlobsByName("chickenconvent", @ruins);
+ 	getBlobsByName("chickencoop", @ruins);
+ 
+ 	if (ruins.length > 0)

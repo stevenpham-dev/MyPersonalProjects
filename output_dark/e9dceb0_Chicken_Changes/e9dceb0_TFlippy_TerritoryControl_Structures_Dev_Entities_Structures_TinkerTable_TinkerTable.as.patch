@@ -1,0 +1,26 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/TinkerTable/TinkerTable.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/TinkerTable/TinkerTable.as
+index 5167522..8e92edd 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/TinkerTable/TinkerTable.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/TinkerTable/TinkerTable.as
+@@ -53,14 +53,14 @@
+ 
+ 		s.spawnNothing = true;
+ 	}
+-	// {
+-		// ShopItem@ s = addShopItem(this, "Giga Drill Breaker", "$powerdrill$", "powerdrill", "A huge overpowered drill with a durable mithril head.");
+-		// AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 50);
+-		// AddRequirement(s.requirements, "blob", "mat_mithrilingot", "Mithril Ingot", 2);
+-		// AddRequirement(s.requirements, "blob", "mat_copperwire", "Copper Wire", 2);
++	{
++		ShopItem@ s = addShopItem(this, "Giga Drill Breaker", "$powerdrill$", "powerdrill", "A huge overpowered drill with a durable mithril head.");
++		AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 50);
++		AddRequirement(s.requirements, "blob", "mat_mithrilingot", "Mithril Ingot", 2);
++		AddRequirement(s.requirements, "blob", "mat_copperwire", "Copper Wire", 2);
+ 
+-		// s.spawnNothing = true;
+-	// }
++		s.spawnNothing = true;
++	}
+ 	// {
+ 		// ShopItem@ s = addShopItem(this, "Contrabass", "$contrabass$", "contrabass", "A musical instrument for the finest bards.");
+ 		// AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 60);

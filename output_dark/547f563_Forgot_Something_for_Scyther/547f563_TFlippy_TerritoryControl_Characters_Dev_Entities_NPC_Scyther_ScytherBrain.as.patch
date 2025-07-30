@@ -1,0 +1,19 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Scyther/ScytherBrain.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Scyther/ScytherBrain.as
+index 235c4c0..c756f24 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Scyther/ScytherBrain.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Scyther/ScytherBrain.as
+@@ -166,6 +166,7 @@
+ 		if (blob.get_u32("nextAttack") < getGameTime() && (stuck || (visibleTarget ? true : distance <= chaseDistance * 0.50f)))
+ 		{
+ 			blob.setKeyPressed(key_action1, true);
++			blob.set_bool("should_do_attack_hack", true);
+ 		}
+ 		else
+ 		{
+@@ -548,4 +549,4 @@
+ 	if (!isClient()) return;
+ 
+ 	ParticleAnimated(filename, this.getPosition() + pos, vel, float(XORRandom(360)), 1.8f + XORRandom(100) * 0.01f, 2 + XORRandom(6), XORRandom(100) * -0.00005f, true);
+-}
+\ No newline at end of file
++}

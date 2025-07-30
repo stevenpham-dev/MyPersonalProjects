@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Tavern/Tavern.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Tavern/Tavern.as
+index fac1bc7..6f5a44d 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Tavern/Tavern.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Tavern/Tavern.as
+@@ -91,7 +91,7 @@
+ 	}
+ 	else
+ 	{
+-		if (caller.getTeamNum() > 100)
++		if (caller.getTeamNum() >= 100)
+ 		{
+ 			if (caller.getPlayer().get_u16("tavern_netid") != this.getNetworkID())
+ 			{

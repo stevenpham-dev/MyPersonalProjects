@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Beer/Beer.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Beer/Beer.as
+index be58e77..c9d7f03 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Beer/Beer.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Beer/Beer.as
+@@ -1,6 +1,7 @@
+ void onInit(CBlob@ this)
+ {
+ 	this.addCommandID("consume");
++	this.Tag("hopperable");
+ }
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)

@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foof.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foof.as
+index 62a662d..f9c610b 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foof.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foof.as
+@@ -2,6 +2,7 @@
+ {
+ 	this.getShape().SetRotationsAllowed(true);
+ 	this.addCommandID("consume");
++	this.Tag("hopperable");
+ }
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)

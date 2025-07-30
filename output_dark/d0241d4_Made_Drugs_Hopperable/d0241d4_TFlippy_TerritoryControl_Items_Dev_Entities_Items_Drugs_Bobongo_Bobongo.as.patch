@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Bobongo/Bobongo.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Bobongo/Bobongo.as
+index 284799d..bfb1b00 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Bobongo/Bobongo.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Bobongo/Bobongo.as
+@@ -2,6 +2,7 @@
+ {
+ 	this.getShape().SetRotationsAllowed(true);
+ 	this.addCommandID("consume");
++	this.Tag("hopperable");
+ }
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)

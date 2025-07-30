@@ -1,0 +1,15 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/CombatChickens/Ambassador/AmbassadorChicken.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/CombatChickens/Ambassador/AmbassadorChicken.as
+index 73c8bc0..06f6d88 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/CombatChickens/Ambassador/AmbassadorChicken.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/CombatChickens/Ambassador/AmbassadorChicken.as
+@@ -109,9 +109,8 @@
+ 		moveVars.jumpFactor *= 2.00f;
+ 	}
+ 
+-	if (this.getHealth() < 0.0 && !this.hasTag("dead"))
++	if (this.getHealth() < 0.0 && this.hasTag("dead"))
+ 	{
+-		this.Tag("dead");
+ 		this.getSprite().PlaySound("Wilhelm.ogg", 1.8f, 1.8f);
+ 		
+ 		if (isServer())

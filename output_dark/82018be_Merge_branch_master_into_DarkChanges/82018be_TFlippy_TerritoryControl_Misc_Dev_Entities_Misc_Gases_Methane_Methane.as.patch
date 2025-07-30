@@ -1,0 +1,33 @@
+diff --git a/TFlippy_TerritoryControl_Misc_Dev/Entities/Misc/Gases/Methane/Methane.as b/TFlippy_TerritoryControl_Misc_Dev/Entities/Misc/Gases/Methane/Methane.as
+index 992f178..9c2ccc3 100644
+--- a/TFlippy_TerritoryControl_Misc_Dev/Entities/Misc/Gases/Methane/Methane.as
++++ b/TFlippy_TerritoryControl_Misc_Dev/Entities/Misc/Gases/Methane/Methane.as
+@@ -25,12 +25,12 @@
+ 
+ 	this.getSprite().RotateBy(90 * XORRandom(4), Vec2f());
+ 
+-	this.server_SetTimeToDie(90);
++	this.server_SetTimeToDie(50 + XORRandom(40));
+ }
+ 
+ void onTick(CBlob@ this)
+ {
+-	if (isServer() && this.getPosition().y < 0) this.server_Die();
++	if (isServer() && this.getPosition().y < 0) { this.server_Die(); }
+ 	
+ 	if (isClient())
+ 	{
+@@ -89,12 +89,7 @@
+ 		case Hitters::keg:
+ 		case Hitters::mine:
+ 			this.Tag("lit");
+-			this.server_SetTimeToDie(2.00f / 20.00f);
+-			return 0;
+-			break;
+-
+-		default:
+-			return 0;
++			this.server_SetTimeToDie(0.1f);
+ 			break;
+ 	}
+ 

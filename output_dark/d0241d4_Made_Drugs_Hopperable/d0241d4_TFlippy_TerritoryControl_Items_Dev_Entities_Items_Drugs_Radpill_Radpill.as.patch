@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Radpill/Radpill.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Radpill/Radpill.as
+index 323ba14..92ce617 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Radpill/Radpill.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Radpill/Radpill.as
+@@ -3,6 +3,7 @@
+ void onInit(CBlob@ this)
+ {
+ 	this.addCommandID("consume");
++	this.Tag("hopperable");
+ }
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)

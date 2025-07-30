@@ -1,0 +1,57 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/TinkerTable/TinkerTable.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/TinkerTable/TinkerTable.as
+index 6762a41..e42583b 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/TinkerTable/TinkerTable.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/TinkerTable/TinkerTable.as
+@@ -73,10 +73,8 @@
+ 		s.spawnNothing = true;
+ 	}
+ 	{
+-		ShopItem@ s = addShopItem(this, "Autonomous Activator", "$icon_automat$", "automat", "A fish-operated contraption that uses anything in its tiny hands. May be only carried around when not holding anything.");
+-		AddRequirement(s.requirements, "blob", "mat_steelingot", "Steel Ingot", 3);
+-		AddRequirement(s.requirements, "blob", "fishy", "Fishy", 1);
+-		AddRequirement(s.requirements, "coin", "", "Coins", 350);
++		ShopItem@ s = addShopItem(this, "Copper Wire (10)", "$mat_copperwire$", "mat_copperwire-10", "A bundle of copper wires. Kids' favourite toy.");
++		AddRequirement(s.requirements, "blob", "mat_copperingot", "Copper Ingot", 5);
+ 		s.spawnNothing = true;
+ 	}
+ 	{
+@@ -138,6 +136,13 @@
+ 		s.spawnNothing = true;
+ 	}
+ 	{
++		ShopItem@ s = addShopItem(this, "Autonomous Activator", "$icon_automat$", "automat", "A fish-operated contraption that uses anything in its tiny hands. May be only carried around when not holding anything.");
++		AddRequirement(s.requirements, "blob", "mat_steelingot", "Steel Ingot", 3);
++		AddRequirement(s.requirements, "blob", "fishy", "Fishy", 1);
++		AddRequirement(s.requirements, "coin", "", "Coins", 350);
++		s.spawnNothing = true;
++	}
++	{
+ 		ShopItem@ s = addShopItem(this, "Miner's Helmet", "$icon_minershelmet$", "minershelmet", "Turns you into an illuminati miner.");
+ 		AddRequirement(s.requirements, "blob", "lantern", "Lantern", 1);
+ 		AddRequirement(s.requirements, "blob", "mat_goldingot", "Gold Ingot", 1);
+@@ -154,12 +159,6 @@
+ 		s.spawnNothing = true;
+ 	}
+ 	{
+-		ShopItem@ s = addShopItem(this, "Backpack", "$icon_backpack$", "backpack", "A large leather backpack that can be equipped and used as an inventory.\nOccupies the Torso slot");
+-		AddRequirement(s.requirements, "coin", "", "Coins", 150);
+-
+-		s.spawnNothing = true;
+-	}
+-	{
+ 		ShopItem@ s = addShopItem(this, "Mouse Trap", "$icon_mousetrap$", "mousetrap", "An intricate device used for capturing of oversized mice.");
+ 		AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 150);
+ 		AddRequirement(s.requirements, "blob", "mat_copperingot", "Copper Ingot", 4);
+@@ -274,6 +273,12 @@
+ 
+ 		s.spawnNothing = true;
+ 	}
++	{
++		ShopItem@ s = addShopItem(this, "Backpack", "$icon_backpack$", "backpack", "A large leather backpack that can be equipped and used as an inventory.\nOccupies the Torso slot");
++		AddRequirement(s.requirements, "coin", "", "Coins", 150);
++
++		s.spawnNothing = true;
++	}
+ 	// {
+ 		// ShopItem@ s = addShopItem(this, "Firework (1)", "$icon_firework$", "firework", "Celebrate the new year with this colorful rocket!");
+ 		// AddRequirement(s.requirements, "coin", "", "Coins", 50);

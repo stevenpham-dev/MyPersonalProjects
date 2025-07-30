@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/MethaneCollector/MethaneCollector.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/MethaneCollector/MethaneCollector.as
+index 8101de0..1762965 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/MethaneCollector/MethaneCollector.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/MethaneCollector/MethaneCollector.as
+@@ -50,7 +50,7 @@
+ 
+ CBlob@ FindStorage(u8 team)
+ {
+-	if (team > 100) return null;
++	if (team >= 100) return null;
+ 	
+ 	CBlob@[] blobs;
+ 	getBlobsByName("gastank", @blobs);

@@ -1,0 +1,28 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/BuilderShop/BuilderShop.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/BuilderShop/BuilderShop.as
+index 399f860..ccfc02e 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/BuilderShop/BuilderShop.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/BuilderShop/BuilderShop.as
+@@ -68,8 +68,8 @@
+ 		s.spawnNothing = true;
+ 	}
+ 	{
+-		ShopItem@ s = addShopItem(this, "Building for Dummies", "$artisancertificate$", "artisancertificate", "Simplified Builder manuscript for those dumb peasants.", true);
+-		AddRequirement(s.requirements, "coin", "", "Coins", 300);
++		ShopItem@ s = addShopItem(this, "Boulder", "$boulder$", "boulder", "Boulder used for crushing people.", true);
++		AddRequirement(s.requirements, "blob", "mat_stone", "Stone", 50);
+ 		
+ 		s.spawnNothing = true;
+ 	}
+@@ -93,6 +93,12 @@
+ 		s.spawnNothing = true;
+ 	}
+ 	{
++		ShopItem@ s = addShopItem(this, "Building for Dummies", "$artisancertificate$", "artisancertificate", "Simplified Builder manuscript for those dumb peasants.", true);
++		AddRequirement(s.requirements, "coin", "", "Coins", 300);
++		
++		s.spawnNothing = true;
++	}
++	{
+ 		ShopItem@ s = addShopItem(this, "Engineer's Tools", "$engineertools$", "engineertools", "Engineer's Tools for real engineers.", true);
+ 		AddRequirement(s.requirements, "blob", "mat_ironingot", "Iron Ingot", 4);
+ 		AddRequirement(s.requirements, "coin", "", "Coins", 1000);

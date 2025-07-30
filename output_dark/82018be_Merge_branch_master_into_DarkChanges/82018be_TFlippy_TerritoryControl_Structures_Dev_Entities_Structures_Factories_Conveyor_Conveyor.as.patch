@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/Conveyor/Conveyor.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/Conveyor/Conveyor.as
+index b95b229..a555412 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/Conveyor/Conveyor.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/Conveyor/Conveyor.as
+@@ -5,6 +5,8 @@
+ 
+ void onInit(CBlob@ this)
+ {
++	this.set_TileType("background tile", CMap::tile_castle_back);
++	
+ 	this.getSprite().SetZ(10);
+ 	this.getShape().SetRotationsAllowed(false);
+ 

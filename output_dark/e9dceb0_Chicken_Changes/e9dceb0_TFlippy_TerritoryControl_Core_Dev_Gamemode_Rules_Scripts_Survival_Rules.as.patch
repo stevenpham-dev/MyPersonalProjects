@@ -1,0 +1,24 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+index d345851..879454f 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+@@ -562,9 +562,16 @@
+ 	if (ruins.length > 0)
+ 	{
+ 		string blobType;
+-
+-		int rand = XORRandom(100);
+-
++		int minutes = getGameTime() / (60*30);
++		
++		if (minutes < 99)
++		{
++			int rand = XORRandom(100 - minutes);
++		}
++		else 
++		{
++			int rand = 1;
++		}
+ 		if (rand < 5)
+ 		{
+ 			blobType = "heavychicken";

@@ -1,0 +1,15 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+index 012a124..4276ef7 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+@@ -307,6 +307,10 @@
+ {
+ 	s32 gametime = getGameTime();
+ 
++	/// EXPERIMENTAL
++	getNet().server_KeepConnectionsAlive();
++	/// END
++
+ 	for (u8 i = 0; i < getPlayerCount(); i++)
+ 	{
+ 		CPlayer@ player = getPlayer(i);

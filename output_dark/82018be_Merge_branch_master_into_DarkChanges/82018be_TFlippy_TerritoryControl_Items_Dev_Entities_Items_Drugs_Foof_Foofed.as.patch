@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foofed.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foofed.as
+index 07fa147..4f28961 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foofed.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foofed.as
+@@ -30,7 +30,7 @@
+ 
+ void onHitBlob(CBlob@ this, Vec2f worldPoint, Vec2f velocity, f32 damage, CBlob@ hitBlob, u8 customData)
+ {
+-	MegaHit(this, worldPoint, velocity, damage, hitBlob, customData);
++	if (hitBlob !is this) MegaHit(this, worldPoint, velocity, damage, hitBlob, customData);
+ }
+ 
+ void onHitMap(CBlob@ this, Vec2f worldPoint, Vec2f velocity, f32 damage, u8 customData)

@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Love/Love_Effect.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Love/Love_Effect.as
+index da351eb..f1770c7 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Love/Love_Effect.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Love/Love_Effect.as
+@@ -8,6 +8,8 @@
+ 
+ void onInit(CBlob@ this)
+ {
++	this.Tag("no_suicide");
++
+ 	CSprite@ sprite = this.getSprite();
+ 	sprite.RewindEmitSound();
+ 	sprite.SetEmitSound("Love_Loop.ogg");

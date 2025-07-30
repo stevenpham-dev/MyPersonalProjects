@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Patreon_Dev/Structures/Altar/SwagLag/Dew/Dew.as b/TFlippy_TerritoryControl_Patreon_Dev/Structures/Altar/SwagLag/Dew/Dew.as
+index 6101bf8..54e21ca 100644
+--- a/TFlippy_TerritoryControl_Patreon_Dev/Structures/Altar/SwagLag/Dew/Dew.as
++++ b/TFlippy_TerritoryControl_Patreon_Dev/Structures/Altar/SwagLag/Dew/Dew.as
+@@ -2,6 +2,7 @@
+ {
+ 	this.getShape().SetRotationsAllowed(true);
+ 	this.addCommandID("consume");
++	this.Tag("hopperable");
+ }
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)

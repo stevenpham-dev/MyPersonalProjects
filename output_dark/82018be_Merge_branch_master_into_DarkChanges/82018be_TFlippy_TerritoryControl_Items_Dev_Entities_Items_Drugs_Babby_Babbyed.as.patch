@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Babby/Babbyed.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Babby/Babbyed.as
+index 0f34fe7..0eed661 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Babby/Babbyed.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Babby/Babbyed.as
+@@ -8,6 +8,7 @@
+ 
+ void onInit(CBlob@ this)
+ {
++	this.Tag("no_suicide");
+ 	if (isClient() && this.isMyPlayer()) getMap().CreateSkyGradient("skygradient_babby.png");
+ }
+ 

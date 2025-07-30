@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Scripts/RunnerDefault.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Scripts/RunnerDefault.as
+index 5c9676c..6f14446 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Scripts/RunnerDefault.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Scripts/RunnerDefault.as
+@@ -210,7 +210,7 @@
+ 
+ f32 onHit(CBlob@ this, Vec2f worldPoint, Vec2f velocity, f32 damage, CBlob@ hitterBlob, u8 customData)
+ {
+-	if ((customData == Hitters::suicide || customData == Hitters::nothing) && (getKnocked(this) > 0 || this.get_f32("babbyed") > 0.00f))
++	if ((customData == Hitters::suicide || customData == Hitters::nothing) && (getKnocked(this) > 0 || this.hasTag("no_suicide")))
+ 	{
+ 		damage = 0;
+ 	}

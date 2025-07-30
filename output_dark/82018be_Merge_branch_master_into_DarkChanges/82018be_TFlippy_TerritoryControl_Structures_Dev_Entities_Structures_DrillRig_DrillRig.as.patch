@@ -1,0 +1,16 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrillRig/DrillRig.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrillRig/DrillRig.as
+index bb20c82..4447213 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrillRig/DrillRig.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrillRig/DrillRig.as
+@@ -67,6 +67,11 @@
+ 
+ 		this.server_HitMap(pos, Vec2f(0, 0), 1.3f, Hitters::drill);
+ 	}
++	
++	if (isClient())
++	{
++		this.getSprite().SetEmitSoundSpeed(0.7f + ((this.get_f32("gyromat_acceleration") - 1.00f) * 0.10f));
++	}
+ }
+ 
+ void onHitMap(CBlob@ this, Vec2f worldPoint, Vec2f velocity, f32 damage, u8 customData)

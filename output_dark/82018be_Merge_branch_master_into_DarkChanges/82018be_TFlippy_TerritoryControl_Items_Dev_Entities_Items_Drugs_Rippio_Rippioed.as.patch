@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Rippio/Rippioed.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Rippio/Rippioed.as
+index 30dac80..f51bcf0 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Rippio/Rippioed.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Rippio/Rippioed.as
+@@ -8,6 +8,8 @@
+ 
+ void onInit(CBlob@ this)
+ {
++	this.Tag("no_suicide");
++
+ 	if (this.hasTag("human") || this.hasTag("chicken"))
+ 	{
+ 		CSprite@ sprite = this.getSprite();

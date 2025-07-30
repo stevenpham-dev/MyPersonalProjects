@@ -1,0 +1,17 @@
+diff --git a/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/Catapult/Catapult.as b/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/Catapult/Catapult.as
+index 773b22a..743d70f 100644
+--- a/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/Catapult/Catapult.as
++++ b/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/Catapult/Catapult.as
+@@ -225,12 +225,6 @@
+ 		{
+ 			SetKnocked(bullet, 30);
+ 		}
+-
+-		if (bullet.getName() == "boulder") // rock n' roll baby
+-		{
+-			bullet.getShape().getConsts().mapCollisions = false;
+-			bullet.getShape().getConsts().collidable = false;
+-		}
+ 	}
+ 
+ 	// we override the default time because we want to base it on charge

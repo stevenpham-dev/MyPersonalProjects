@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Engineer/EngineerLogic.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Engineer/EngineerLogic.as
+index 515285e..699d1e3 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Engineer/EngineerLogic.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Engineer/EngineerLogic.as
+@@ -2,7 +2,6 @@
+ 
+ void onInit(CBlob@ this)
+ {
+-	this.Tag("neutral");
+ 	this.Tag("human");
+ 	
+ 	this.set_f32("mining_multiplier", 0.75f);

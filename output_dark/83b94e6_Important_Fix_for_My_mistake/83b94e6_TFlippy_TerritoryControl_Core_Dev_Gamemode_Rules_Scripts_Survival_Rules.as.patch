@@ -1,0 +1,22 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+index 879454f..012a124 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/Survival_Rules.as
+@@ -563,14 +563,10 @@
+ 	{
+ 		string blobType;
+ 		int minutes = getGameTime() / (60*30);
+-		
+-		if (minutes < 99)
++		int rand = XORRandom(100) - minutes;
++		if (rand < 5)
+ 		{
+-			int rand = XORRandom(100 - minutes);
+-		}
+-		else 
+-		{
+-			int rand = 1;
++			rand = 4;
+ 		}
+ 		if (rand < 5)
+ 		{

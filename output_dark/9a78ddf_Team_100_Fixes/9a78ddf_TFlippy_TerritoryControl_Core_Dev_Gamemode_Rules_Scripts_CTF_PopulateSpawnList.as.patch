@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/CTF_PopulateSpawnList.as b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/CTF_PopulateSpawnList.as
+index f2a9c09..830c4e2 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/CTF_PopulateSpawnList.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Gamemode/Rules/Scripts/CTF_PopulateSpawnList.as
+@@ -11,7 +11,7 @@
+ 	{
+ 		CBlob@ blob = posts[i];
+ 
+-		if (teamNum > 100 ? (blob.getTeamNum() > 100) : (blob.getTeamNum() == teamNum && !isUnderRaid(blob)))
++		if (teamNum >= 100 ? (blob.getTeamNum() >= 100) : (blob.getTeamNum() == teamNum && !isUnderRaid(blob)))
+ 		{
+ 			respawns.push_back(blob);
+ 		}

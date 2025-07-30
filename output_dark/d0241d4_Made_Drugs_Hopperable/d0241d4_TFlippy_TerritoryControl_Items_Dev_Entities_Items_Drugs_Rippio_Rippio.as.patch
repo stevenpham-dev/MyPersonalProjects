@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Rippio/Rippio.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Rippio/Rippio.as
+index 695b56d..e681b42 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Rippio/Rippio.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Rippio/Rippio.as
+@@ -2,6 +2,7 @@
+ {
+ 	this.getShape().SetRotationsAllowed(true);
+ 	this.addCommandID("consume");
++	this.Tag("hopperable");
+ 	
+ 	this.Tag("forcefeed_always");
+ }
