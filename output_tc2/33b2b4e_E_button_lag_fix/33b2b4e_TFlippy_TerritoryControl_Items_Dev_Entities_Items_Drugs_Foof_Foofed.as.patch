@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foofed.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foofed.as
+index 782c242..46774f4 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foofed.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Foof/Foofed.as
+@@ -24,7 +24,7 @@
+ 	}
+ 	else
+ 	{
+-		this.set_f32("foofed", Maths::Max(0, this.get_f32("foofed") - (0.0005f)));
++		this.set_f32("foofed", Maths::Max(0, this.get_f32("foofed") - (0.001f)));
+ 	}
+ }
+ 

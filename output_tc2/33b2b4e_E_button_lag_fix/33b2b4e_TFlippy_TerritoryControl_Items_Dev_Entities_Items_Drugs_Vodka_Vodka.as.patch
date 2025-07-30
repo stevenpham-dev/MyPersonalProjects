@@ -1,0 +1,20 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Vodka/Vodka.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Vodka/Vodka.as
+index ea3e70a..e595002 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Vodka/Vodka.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Vodka/Vodka.as
+@@ -6,9 +6,12 @@
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)
+ {
+-	CBitStream params;
+-	params.write_u16(caller.getNetworkID());
+-	caller.CreateGenericButton(22, Vec2f(0, 0), this, this.getCommandID("consume"), "Drink!", params);
++	if (this.isOverlapping(caller) || this.isAttachedTo(caller))
++	{
++		CBitStream params;
++		params.write_u16(caller.getNetworkID());
++		caller.CreateGenericButton(22, Vec2f(0, 0), this, this.getCommandID("consume"), "Drink!", params);
++	}
+ }
+ 
+ void onCommand(CBlob@ this, u8 cmd, CBitStream @params)

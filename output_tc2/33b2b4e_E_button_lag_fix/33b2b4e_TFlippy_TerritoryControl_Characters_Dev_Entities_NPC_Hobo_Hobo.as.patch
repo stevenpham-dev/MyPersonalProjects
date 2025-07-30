@@ -1,0 +1,16 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Hobo/Hobo.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Hobo/Hobo.as
+index 1bb1fbd..92e6fd5 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Hobo/Hobo.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/NPC/Hobo/Hobo.as
+@@ -570,6 +570,11 @@
+ 	if (player !is null) player.SetScoreboardVars("ScoreboardIcons.png", 20, Vec2f(16, 16));
+ }
+ 
++void GetButtonsFor(CBlob@ this, CBlob@ caller)
++{
++	this.set_bool("shop available", this.isOverlapping(caller) || this.isAttachedTo(caller));
++}
++
+ void onCommand(CBlob@ this, u8 cmd, CBitStream @params)
+ {
+ 	if (cmd == this.getCommandID("traderChat"))

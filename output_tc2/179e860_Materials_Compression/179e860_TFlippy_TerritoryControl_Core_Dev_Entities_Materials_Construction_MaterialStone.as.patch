@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialStone.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialStone.as
+index 95100c4..7c2a33b 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialStone.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialStone.as
+@@ -6,7 +6,7 @@
+     this.set_u8('decay step', 14);
+   }
+ 
+-  this.maxQuantity = 500;
++  this.maxQuantity = 1000;
+ 
+   this.getCurrentScript().runFlags |= Script::remove_after_this;
+ }

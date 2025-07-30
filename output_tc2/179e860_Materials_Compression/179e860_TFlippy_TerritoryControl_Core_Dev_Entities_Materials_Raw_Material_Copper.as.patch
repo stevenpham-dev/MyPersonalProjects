@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Copper.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Copper.as
+index 6e177c6..26bd9d9 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Copper.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Copper.as
+@@ -1,5 +1,5 @@
+ void onInit(CBlob@ this)
+ {	
+-	this.maxQuantity = 500;
++	this.maxQuantity = 1000;
+ 	this.getCurrentScript().runFlags |= Script::remove_after_this;
+ }
+\ No newline at end of file

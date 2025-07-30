@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/Type/head.as b/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/Type/head.as
+index 7c8470c..5a6d264 100644
+--- a/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/Type/head.as
++++ b/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/Type/head.as
+@@ -1,4 +1,7 @@
+ void onInit(CBlob@ this)
+ {
+ 	this.Tag("head");
++
++	if (this.getName() == "militaryhelmet")
++		this.Tag("armor");
+ }
+\ No newline at end of file

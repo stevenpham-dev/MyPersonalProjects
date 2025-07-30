@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/MilitaryHelmet/militaryhelmet_effect.as b/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/MilitaryHelmet/militaryhelmet_effect.as
+index 2f55d24..f82885d 100644
+--- a/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/MilitaryHelmet/militaryhelmet_effect.as
++++ b/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/MilitaryHelmet/militaryhelmet_effect.as
+@@ -31,6 +31,7 @@
+ 
+ 		if (bushy !is null)
+ 		{
++			milhelmet.SetVisible(false);
+ 			bushy.SetVisible(true);
+ 			bushy.SetRelativeZ(200);
+ 			if (this.getSprite().isFacingLeft())

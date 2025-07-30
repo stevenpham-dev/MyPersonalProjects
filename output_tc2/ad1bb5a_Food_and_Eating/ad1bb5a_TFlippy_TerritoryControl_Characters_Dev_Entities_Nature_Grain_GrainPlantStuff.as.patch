@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/Nature/Grain/GrainPlantStuff.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/Nature/Grain/GrainPlantStuff.as
+index 41aa5af..39479ca 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/Nature/Grain/GrainPlantStuff.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/Nature/Grain/GrainPlantStuff.as
+@@ -11,6 +11,7 @@
+ 		if (this.hasTag("has grain"))
+ 		{			
+ 			CBlob@ grain = server_CreateBlob("grain", this.getTeamNum(), this.getPosition());
++			grain.server_SetQuantity(1+XORRandom(3));
+ 			if (grain !is null)
+ 			{
+ 				server_MakeSeed(this.getPosition(), "grain_plant", 300, 1, 4);

@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Stim/Stimed.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Stim/Stimed.as
+index d55e458..b259f1f 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Stim/Stimed.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Stim/Stimed.as
+@@ -48,7 +48,7 @@
+ 			this.setKeyPressed(key_action1, true);
+ 		}
+ 					
+-		this.set_f32("stimed", Maths::Max(0, this.get_f32("stimed") - (0.0001f)));
++		this.set_f32("stimed", Maths::Max(0, this.get_f32("stimed") - (0.0005f)));
+ 	}
+ 	
+ 	// print("" + true_level);

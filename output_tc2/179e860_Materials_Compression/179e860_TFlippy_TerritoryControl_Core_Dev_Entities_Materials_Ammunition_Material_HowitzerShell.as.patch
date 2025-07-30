@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Ammunition/Material_HowitzerShell.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Ammunition/Material_HowitzerShell.as
+index d99a8df..c48a8f0 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Ammunition/Material_HowitzerShell.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Ammunition/Material_HowitzerShell.as
+@@ -3,7 +3,7 @@
+ 
+ void onInit(CBlob@ this)
+ {
+-	this.maxQuantity = 4;
++	this.maxQuantity = 8;
+ 	this.Tag("explosive");
+ 	this.Tag("medium weight");
+ }

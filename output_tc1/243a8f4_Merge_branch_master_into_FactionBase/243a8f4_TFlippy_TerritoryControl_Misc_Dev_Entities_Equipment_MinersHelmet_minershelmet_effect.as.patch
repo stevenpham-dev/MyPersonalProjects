@@ -1,0 +1,19 @@
+diff --git a/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/MinersHelmet/minershelmet_effect.as b/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/MinersHelmet/minershelmet_effect.as
+index fb5e0ef..d4334e2 100644
+--- a/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/MinersHelmet/minershelmet_effect.as
++++ b/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/MinersHelmet/minershelmet_effect.as
+@@ -33,6 +33,14 @@
+ 		this.set_string("reload_script", "");
+ 	}
+ 
++	if (this.get_f32("minershelmet_health") >= 10.0f)
++	{
++		this.getSprite().PlaySound("woodheavyhit1");
++		this.set_string("equipment_head", "");
++		this.set_f32("minershelmet_health", 9.9f);
++		this.RemoveScript("minershelmet_effect.as");
++	}
++
+ 	CSpriteLayer@ mhelmet = this.getSprite().getSpriteLayer("minershelmet");
+ 	
+ 	if (mhelmet !is null)

@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Poot/Pooted.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Poot/Pooted.as
+index 35eb300..366fcc7 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Poot/Pooted.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Drugs/Poot/Pooted.as
+@@ -137,7 +137,7 @@
+ 			if (client)
+ 			{
+ 				this.getSprite().PlaySound("FallBig" + (XORRandom(5) + 1), vellen / 8.0f + 0.2f, 1.6f - vellen / 45.0f);
+-				ShakeScreen(vellen * 15.0f, vellen * 4.0f, this.getPosition());
++				ShakeScreen(vellen * 10.0f, vellen * 4.0f, this.getPosition());
+ 			}
+ 			
+ 			if (server)

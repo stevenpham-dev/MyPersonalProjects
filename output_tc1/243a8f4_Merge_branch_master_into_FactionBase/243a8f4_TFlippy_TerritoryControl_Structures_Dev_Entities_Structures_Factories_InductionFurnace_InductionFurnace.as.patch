@@ -1,0 +1,24 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/InductionFurnace/InductionFurnace.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/InductionFurnace/InductionFurnace.as
+index 6b016c5..20c46e4 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/InductionFurnace/InductionFurnace.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/InductionFurnace/InductionFurnace.as
+@@ -28,8 +28,8 @@
+ };
+ 
+ const int[] coalRatio = {
+-	2,
+-	2,
++	0,
++	0,
+ 	3,
+ 	4
+ };
+@@ -63,7 +63,7 @@
+ 			if (isServer())
+ 			{
+ 				CBlob @mat = server_CreateBlob(matNamesResult[i], -1, this.getPosition());
+-				mat.server_SetQuantity(2);
++				mat.server_SetQuantity(4);
+ 				mat.Tag("justmade");
+ 				this.TakeBlob(matNames[i], matRatio[i]);
+ 				this.TakeBlob("mat_coal", coalRatio[i]);

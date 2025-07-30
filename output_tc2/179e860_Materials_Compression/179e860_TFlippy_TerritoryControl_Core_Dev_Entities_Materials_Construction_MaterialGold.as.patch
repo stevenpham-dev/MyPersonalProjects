@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialGold.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialGold.as
+index 746fc8a..929159f 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialGold.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialGold.as
+@@ -1,7 +1,7 @@
+ 
+ void onInit(CBlob@ this)
+ {
+-  this.maxQuantity = 250;
++  this.maxQuantity = 500;
+ 
+   this.getCurrentScript().runFlags |= Script::remove_after_this;
+ }

@@ -1,0 +1,21 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/Treecapitator/Treecapitator.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/Treecapitator/Treecapitator.as
+index 37ea150..eabc892 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/Treecapitator/Treecapitator.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/Treecapitator/Treecapitator.as
+@@ -10,7 +10,7 @@
+ 	// this.Tag("ignore extractor");
+ 	this.Tag("builder always hit");
+ 
+-	this.getCurrentScript().tickFrequency = 5;
++	this.getCurrentScript().tickFrequency = 15;
+ 
+ 	CSprite@ sprite = this.getSprite();
+ 	if (sprite !is null)
+@@ -24,6 +24,7 @@
+ 
+ void onTick(CBlob@ this)
+ {
++	if (this.getInventory().isFull()) return;
+ 	if (!this.getShape().isStatic()) return;
+ 
+ 	if (isServer())

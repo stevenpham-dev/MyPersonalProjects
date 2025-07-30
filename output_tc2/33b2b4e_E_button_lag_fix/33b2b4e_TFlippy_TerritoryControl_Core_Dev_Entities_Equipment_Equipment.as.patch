@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Equipment/Equipment.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Equipment/Equipment.as
+index a45fb19..067cba6 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Equipment/Equipment.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Equipment/Equipment.as
+@@ -205,6 +205,7 @@
+ 	playerblob.RemoveScript(headname+"_effect.as");
+ 	playerblob.Tag("update head");
+ 	playerblob.Untag("disguised");
++	if (playerblob.hasTag("pax immune")) playerblob.Untag("pax immune");
+ 	if (playerblob.hasTag("bushy")) playerblob.Untag("bushy");
+ }
+ 

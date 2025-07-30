@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Descriptions.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Descriptions.as
+index 7cde718..32f1628 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Descriptions.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Descriptions.as
+@@ -84,7 +84,7 @@
+ 	catapult                   = getTranslatedString("A stone throwing, ridable siege engine, requiring a crew of two."),
+ 	ballista                   = getTranslatedString("A bolt-firing pinpoint accurate siege engine, requiring a crew of two. Allows respawn and class change."),
+ 	ballista_ammo              = getTranslatedString("Piercing bolts for ballista."),
+-	ballista_ammo_upgrade_gold = getTranslatedString("For Ballista\nTurns its piercing bolts into a shaped explosive charge."),
++	ballista_bomb_ammo         = getTranslatedString("Explosive bolts for ballista."),
+ 
+ 	stone                      = getTranslatedString("Raw stone material."),
+ 	wood                       = getTranslatedString("Raw wood material."),

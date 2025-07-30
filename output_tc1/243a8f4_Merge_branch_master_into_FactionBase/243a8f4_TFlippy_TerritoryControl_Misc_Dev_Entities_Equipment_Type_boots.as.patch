@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/Type/boots.as b/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/Type/boots.as
+index 3ee95da..65d299a 100644
+--- a/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/Type/boots.as
++++ b/TFlippy_TerritoryControl_Misc_Dev/Entities/Equipment/Type/boots.as
+@@ -3,4 +3,7 @@
+ 	this.getShape().SetRotationsAllowed(true);
+ 
+ 	this.Tag("boots");
++
++	if (this.getName() == "combatboots")
++		this.Tag("armor");
+ }
+\ No newline at end of file

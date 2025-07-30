@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as
+index af75117..47deb87 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as
+@@ -112,6 +112,7 @@
+ 				CBitStream params;
+ 				params.write_u16(caller.getNetworkID());
+ 				CButton@ button = caller.CreateGenericButton(23, Vec2f(3, -2), this, this.getCommandID("upgrade"), "Upgrade Druglab", params);
++				button.deleteAfterClick = false;
+ 			}
+ 		}
+ 	}

@@ -1,0 +1,18 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/BuilderShop/BuilderShop.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/BuilderShop/BuilderShop.as
+index 6aa5fec..47057e9 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/BuilderShop/BuilderShop.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/BuilderShop/BuilderShop.as
+@@ -86,6 +86,13 @@
+ 		s.spawnNothing = true;
+ 	}
+ 	{
++		ShopItem@ s = addShopItem(this, "Keg", "$keg$", "keg", "Highly explosive keg used by knight only.\nCan be worn.", true);
++		AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 75);
++		AddRequirement(s.requirements, "coin", "", "Coins", 70);
++
++		s.spawnNothing = true;
++	}
++	{
+ 		ShopItem@ s = addShopItem(this, "Chair", "$chair$", "chair", "Quite comfortable.", true);
+ 		AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 40);
+ 

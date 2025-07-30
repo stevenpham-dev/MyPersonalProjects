@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Dirt.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Dirt.as
+index 6dda854..b1a74f9e 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Dirt.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Dirt.as
+@@ -5,6 +5,6 @@
+ 		this.set_u8('decay step', 30);
+ 	}
+ 
+-	this.maxQuantity = 500;
++	this.maxQuantity = 1000;
+ 	this.getCurrentScript().runFlags |= Script::remove_after_this;
+ }
+\ No newline at end of file

@@ -1,0 +1,38 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Forge/Forge.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Forge/Forge.as
+index b2ebf7e..2202019 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Forge/Forge.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Forge/Forge.as
+@@ -28,7 +28,7 @@
+ 	AddIconToken("$mat_mithrilingot$", "Material_MithrilIngot.png", Vec2f(16, 16), 1);
+ 
+ 	this.set_Vec2f("shop offset", Vec2f(0,1));
+-	this.set_Vec2f("shop menu size", Vec2f(4, 2));
++	this.set_Vec2f("shop menu size", Vec2f(5, 2));
+ 	this.set_string("shop description", "Forge");
+ 	this.set_u8("shop icon", 15);
+ 
+@@ -56,6 +56,12 @@
+ 		// AddRequirement(s.requirements, "blob", "mat_coal", "Coal", 1);
+ 		s.spawnNothing = true;
+ 	}
++	{
++		ShopItem@ s = addShopItem(this, "Coal (1)", "$mat_coal$", "mat_coal-1", "A black rock that is used for fuel.", true);
++		AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 20);
++		// AddRequirement(s.requirements, "blob", "mat_coal", "Coal",1);
++		s.spawnNothing = true;
++	}
+ 
+ 	// Large batch
+ 	{
+@@ -82,6 +88,11 @@
+ 		// AddRequirement(s.requirements, "blob", "mat_coal", "Coal", 4);
+ 		s.spawnNothing = true;
+ 	}
++	{
++		ShopItem@ s = addShopItem(this, "Coal (4)", "$mat_coal$", "mat_coal-4", "A black rock that is used for fuel.", true);
++		AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 80);
++		s.spawnNothing = true;
++	}
+ }
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)

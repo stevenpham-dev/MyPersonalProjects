@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/Material_Plasteel.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/Material_Plasteel.as
+index 1d174c9..6e177c6 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/Material_Plasteel.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/Material_Plasteel.as
+@@ -1,5 +1,5 @@
+ void onInit(CBlob@ this)
+ {	
+-	this.maxQuantity = 250;
++	this.maxQuantity = 500;
+ 	this.getCurrentScript().runFlags |= Script::remove_after_this;
+ }
+\ No newline at end of file

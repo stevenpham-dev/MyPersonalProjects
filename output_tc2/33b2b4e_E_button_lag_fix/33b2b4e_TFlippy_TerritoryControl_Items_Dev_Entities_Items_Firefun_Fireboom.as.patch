@@ -1,0 +1,18 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Firefun/Fireboom.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Firefun/Fireboom.as
+index 9ef81c6..c5b732c 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Firefun/Fireboom.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/Firefun/Fireboom.as
+@@ -227,8 +227,11 @@
+ {
+ 	if (!this.hasTag("offblast"))
+ 	{
+-		CBitStream params;
+-		caller.CreateGenericButton(11, Vec2f(0.0f, 0.0f), this, this.getCommandID("offblast"), "Off blast!", params);
++		if (this.isOverlapping(caller) || this.isAttachedTo(caller))
++		{
++			CBitStream params;
++			caller.CreateGenericButton(11, Vec2f(0.0f, 0.0f), this, this.getCommandID("offblast"), "Off blast!", params);
++		}
+ 	}
+ }
+ 

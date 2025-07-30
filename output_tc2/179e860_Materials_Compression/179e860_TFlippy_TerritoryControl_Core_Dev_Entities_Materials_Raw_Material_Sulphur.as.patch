@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Sulphur.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Sulphur.as
+index dca27d6..d33d580 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Sulphur.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Raw/Material_Sulphur.as
+@@ -13,7 +13,7 @@
+ 
+ void onInit(CBlob@ this)
+ {
+-	this.maxQuantity = 250;
++	this.maxQuantity = 500;
+ 	
+ 	this.set_bool("map_damage_raycast", true);
+ 	this.set_Vec2f("explosion_offset", Vec2f(0, 0));

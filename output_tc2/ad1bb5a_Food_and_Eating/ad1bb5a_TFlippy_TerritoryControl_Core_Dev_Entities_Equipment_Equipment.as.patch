@@ -1,0 +1,14 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Equipment/Equipment.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Equipment/Equipment.as
+index a45fb19..d44b337 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Equipment/Equipment.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Equipment/Equipment.as
+@@ -114,7 +114,8 @@
+ 					caller.set_f32(eqName+"_health", item.get_f32("health"));
+ 
+ 				if (item.hasTag("bushy")) caller.Tag("bushy");
+-				item.server_Die();
++				if (item.getQuantity() <= 1) item.server_Die();
++				else item.server_SetQuantity(Maths::Max(item.getQuantity() - 1, 0));
+ 			}
+ 			else if (getEquipmentType(item) == "torso")
+ 			{

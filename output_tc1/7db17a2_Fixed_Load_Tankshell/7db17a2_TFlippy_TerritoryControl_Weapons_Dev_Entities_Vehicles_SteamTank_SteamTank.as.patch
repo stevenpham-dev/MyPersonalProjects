@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/SteamTank/SteamTank.as b/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/SteamTank/SteamTank.as
+index 9ed22b1..8ba645d 100644
+--- a/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/SteamTank/SteamTank.as
++++ b/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/SteamTank/SteamTank.as
+@@ -33,6 +33,7 @@
+ 
+ 	this.set_u32("lastHornTime", 0.0f);
+ 	this.set_string("custom_explosion_sound", "KegExplosion");
++	this.set_string("ammoIcon", "icon_tankshell");
+ 
+ 	this.getShape().SetOffset(Vec2f(0, 8));
+ 

@@ -1,0 +1,43 @@
+diff --git a/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Builder/BuilderCommon.as b/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Builder/BuilderCommon.as
+index 0ddf6fd..c8489d2 100644
+--- a/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Builder/BuilderCommon.as
++++ b/TFlippy_TerritoryControl_Characters_Dev/Entities/Characters/Builder/BuilderCommon.as
+@@ -245,31 +245,16 @@
+ 					if (this.getPlayer() !is null)
+ 					blockBlob.set_string("builder", this.getPlayer().getUsername());
+ 
+-					if (b.name == "chickenassembler")
++					if (b.name == "druglab")
+ 					{
+-						CBlob@ bp = server_CreateBlob("bp_automation_advanced", myTeam, this.getPosition());
+-
+-						if (!this.server_PutInInventory(bp))
++						if (XORRandom(3) < 1)
+ 						{
+-							bp.setPosition(this.getPosition());
+-						}
+-					}
+-					else if (b.name == "beamtower")
+-					{
+-						CBlob@ bp = server_CreateBlob("bp_energetics", myTeam, this.getPosition());
++							CBlob@ bp = server_CreateBlob("bp_chemistry", myTeam, this.getPosition());
+ 
+-						if (!this.server_PutInInventory(bp))
+-						{
+-							bp.setPosition(this.getPosition());
+-						}
+-					}
+-					else if (b.name == "chemlab")
+-					{
+-						CBlob@ bp = server_CreateBlob("bp_chemistry", myTeam, this.getPosition());
+-
+-						if (!this.server_PutInInventory(bp))
+-						{
+-							bp.setPosition(this.getPosition());
++							if (!this.server_PutInInventory(bp))
++							{
++								bp.setPosition(this.getPosition());
++							}
+ 						}
+ 					}
+ 					else if (b.name == "banner")

@@ -1,0 +1,14 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as
+index af75117..504f02b 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/DrugLab/DrugLab.as
+@@ -245,7 +245,8 @@
+ 			{
+ 				if (isServer())
+ 				{
+-					grain_blob.server_Die();
++					if (grain_blob.getQuantity() <= 1) grain_blob.server_Die();
++					else grain_blob.server_SetQuantity(Maths::Max(grain_blob.getQuantity() - 1, 0));
+ 					Material::createFor(this, "vodka", 1);
+ 				}
+ 

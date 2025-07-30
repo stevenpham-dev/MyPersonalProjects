@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialWood.as b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialWood.as
+index c249bd7..c34d6e3 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialWood.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/Materials/Construction/MaterialWood.as
+@@ -6,7 +6,7 @@
+ 		this.set_u8('decay step', 36);
+ 	}
+ 
+-	this.maxQuantity = 500;
++	this.maxQuantity = 1000;
+ 
+ 	this.set_u8("fuel_energy", 5);
+ 	this.getCurrentScript().runFlags |= Script::remove_after_this;

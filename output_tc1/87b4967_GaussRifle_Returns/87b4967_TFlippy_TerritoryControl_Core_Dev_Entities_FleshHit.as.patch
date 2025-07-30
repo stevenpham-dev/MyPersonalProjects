@@ -1,0 +1,14 @@
+diff --git a/TFlippy_TerritoryControl_Core_Dev/Entities/FleshHit.as b/TFlippy_TerritoryControl_Core_Dev/Entities/FleshHit.as
+index 5d6a7f0..59fa808 100644
+--- a/TFlippy_TerritoryControl_Core_Dev/Entities/FleshHit.as
++++ b/TFlippy_TerritoryControl_Core_Dev/Entities/FleshHit.as
+@@ -65,6 +65,9 @@
+ 			break;
+ 		
+ 		case Hitters::fire:
++			dmg *= 2.75f;
++			break;
++
+ 		case Hitters::burn:
+ 			dmg *= 2.50f;
+ 			break;

@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/RoyalArmor/RoyalArmor.as b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/RoyalArmor/RoyalArmor.as
+index 4783059..1661cb4 100644
+--- a/TFlippy_TerritoryControl_Items_Dev/Entities/Items/RoyalArmor/RoyalArmor.as
++++ b/TFlippy_TerritoryControl_Items_Dev/Entities/Items/RoyalArmor/RoyalArmor.as
+@@ -5,6 +5,7 @@
+ 	
+ 	this.Tag("kill on use");
+ 	this.Tag("dangerous");
++	this.Tag("armor");
+ }
+ 
+ void GetButtonsFor(CBlob@ this, CBlob@ caller)

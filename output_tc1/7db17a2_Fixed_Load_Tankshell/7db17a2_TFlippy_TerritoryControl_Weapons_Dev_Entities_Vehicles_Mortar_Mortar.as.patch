@@ -1,0 +1,12 @@
+diff --git a/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/Mortar/Mortar.as b/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/Mortar/Mortar.as
+index d2f881f..16eef9a 100644
+--- a/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/Mortar/Mortar.as
++++ b/TFlippy_TerritoryControl_Weapons_Dev/Entities/Vehicles/Mortar/Mortar.as
+@@ -39,6 +39,7 @@
+ 
+ 	this.getShape().SetRotationsAllowed(false);
+ 	this.set_string("autograb blob", "mat_tankshell");
++	this.set_string("ammoIcon", "icon_tankshell");
+ 
+ 	sprite.SetZ(-10.0f);
+ 

@@ -1,0 +1,13 @@
+diff --git a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/AutoForge/AutoForge.as b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/AutoForge/AutoForge.as
+index 377dcc7..616062c 100644
+--- a/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/AutoForge/AutoForge.as
++++ b/TFlippy_TerritoryControl_Structures_Dev/Entities/Structures/Factories/AutoForge/AutoForge.as
+@@ -62,7 +62,7 @@
+ 			if (isServer())
+ 			{
+ 				CBlob@ mat = server_CreateBlob(matNamesResult[i], -1, this.getPosition());
+-				mat.server_SetQuantity(1);
++				mat.server_SetQuantity(2);
+ 				mat.Tag("justmade");
+ 				this.TakeBlob(matNames[i], matRatio[i]);
+ 			}
