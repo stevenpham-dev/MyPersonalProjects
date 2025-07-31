@@ -15,7 +15,7 @@ I, under the username of DarkSlayer at the time, contributed a wide range of fea
 
 - **SmartStorage System**  
   Designed from the ground up to eliminate storage‑related lag, the SmartStorage System replaces the dozens or hundreds of item blobs in a container with a single `(itemName, totalCount)` record. On deposit, blobs are immediately deleted and only the aggregate count is stored; on withdrawal, exactly the requested number of blobs are spawned on‑demand. Fully compatible with any storage entity—chests, faction bases, dinghies—by simply tagging `this.Tag("smart_storage")`, setting `this.set_u16("capacity", <max>)`, and including the core script, it slashes network traffic and physics overhead, enabling smooth gameplay even when hoarding 100 000+ items. This original, self‑engineered solution showcases systems‑level thinking in AngelScript and a keen focus on performance optimization.
-  [![SmartStorage in Action](SmartStorage/kag_smartStorage.gif)](SmartStorage/kag_smartStorage.gif)
+  ![SmartStorage in Action](SmartStorage/kag_smartStorage.gif)
 
 - **New Structures and Items**  
   Introduced entirely new gameplay elements. For example, a Library building was added for builder classes, and the Drug Lab gained a gacha mechanic (random reward packs) to add unpredictability to item outputs. The Chemical Lab and Nuclear Reactor structures became upgradeable—players can spend resources (e.g. copper ingots) to increase the lab’s max heat or the reactor’s max irradiation capacity. Numerous crafting recipes were expanded as well (e.g. more items craftable at the Tinker Table).
