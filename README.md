@@ -103,3 +103,30 @@ I, under the username of DarkSlayer at the time, contributed a wide range of fea
 From small bug patches in mid‑2020 (e.g., “Update Villager.as”) to complex feature additions by late 2021 (multi‑file system overhauls), this body of work illustrates a clear learning curve—from early experimentation to robust, systems‑level design, optimization, and maintainability in AngelScript. Each contribution enhanced gameplay depth, performance, and stability, reflecting the developer’s evolution into a confident software engineer.
 
 ---
+## Numeral Converter: Binary, Hexadecimal, and Decimal Operations
+
+A Java-based CLI tool that allows users to convert and compute between binary, decimal, and hexadecimal formats.
+
+![Demo](./NumberBaseConverter/darkbihexdec.gif)
+
+### Features
+
+- Convert between decimal, binary, and hexadecimal formats
+- Add two numbers in any of the three numeral systems
+- Supports single-number conversion (e.g., decimal to binary)
+- Input validation with user-friendly prompts
+
+---
+
+### About This Project
+
+This was one of my earliest Java projects — built entirely from scratch before I had any formal training. I created it because I couldn’t find a simple calculator that could convert and compute between binary, decimal, and hexadecimal systems.
+
+The `darkbihexdec.java` file is the original version I built from scratch.
+The `bihexdec.java` version is a more polished and modular rewrite.
+
+This project helped solidify my understanding of numeric systems, user input handling, and logic design.
+To test it, click run, then just look at the GIF it is pretty self-explanatory.
+Created by Steven Pham (@stevenpham-dev)
+
+---
